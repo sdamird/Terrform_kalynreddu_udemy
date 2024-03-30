@@ -1,1 +1,27 @@
-my own kubernets notes
+Master Node: The brain of the cluster.
+
+API Server: Acts as the front-end for Kubernetes, handling communication and serving the Kubernetes API.
+Scheduler: Assigns workloads to nodes based on resource requirements and constraints.
+Controller Manager: Maintains the desired state of the cluster, managing different controllers like ReplicaSets, Deployments, etc.
+etcd: Consistent and highly-available key-value store used as Kubernetes' backing store for all cluster data.
+Worker Nodes: The muscle that executes tasks.
+
+Kubelet: An agent that runs on each node, ensuring that containers are running in a Pod.
+Kube-proxy: Manages network communication between Pods and services on a node.
+Container Runtime: Software responsible for running containers, such as Docker, containerd, or cri-o.
+Pods: The smallest deployable units in Kubernetes.
+
+One or more containers that share networking and storage.
+Pods can be managed by controllers like Deployments, StatefulSets, etc.
+Services: Defines a set of Pods and a policy by which to access them.
+
+Enables load balancing and service discovery within the cluster.
+Types include ClusterIP, NodePort, LoadBalancer, and ExternalName.
+Volumes: Provides storage for containers.
+
+Allows data to persist beyond the lifetime of a Pod.
+Various types available, including EmptyDir, HostPath, PersistentVolumeClaim, etc.
+Namespaces: Virtual clusters within a physical cluster.
+
+Provides a way to divide cluster resources between multiple users or teams.
+Helps with resource isolation, access control, and management.
