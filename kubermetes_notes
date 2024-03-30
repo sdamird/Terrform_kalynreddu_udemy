@@ -1,5 +1,5 @@
 Master Node: The brain of the cluster.
-
+---------
 API Server: Acts as the front-end for Kubernetes, handling communication and serving the Kubernetes API.
 Scheduler: Assigns workloads to nodes based on resource requirements and constraints.
 Controller Manager: Maintains the desired state of the cluster, managing different controllers like ReplicaSets, Deployments, etc.
